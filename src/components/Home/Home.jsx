@@ -6,6 +6,7 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import Techstack from "../About/Techstack";
 import Github from "../About/Github";
+import LeetCode from "../About/LeetCode";
 import {
   AiFillGithub,
   AiOutlineTwitter,
