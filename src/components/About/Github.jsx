@@ -1,5 +1,5 @@
 import React from "react";
-import {GitHubCalendar} from "react-github-calendar";
+import { GitHubCalendar } from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
 function Github() {
@@ -43,43 +43,41 @@ export default Github;
 //       </h1>
 
 //       <img
-//   src="https://github-contributions-api.jogruber.de/v4/AKDev32?theme=dark"
+//   src="https://github-readme-stats.vercel.app/api?username=AKDev32\&show_icons=true\&hide_title=true\&theme=default"
 //   alt="GitHub Heatmap Dark"
 //   className="heatmap-image"
 // />
 
-
 //     </Row>
 //   );
 // }
 
 // export default Github;
 
+// // import React from "react";
+// // import { Row } from "react-bootstrap";
+// // import GitHubCalendar from "react-github-calendar";
 
-// import React from "react";
-// import { Row } from "react-bootstrap";
-// import GitHubCalendar from "react-github-calendar";
+// // function Github() {
+// //   return (
+// //     <Row className="stats-container">
+// //       <h1 className="project-heading">
+// //         Days I <strong className="purple">Code</strong>
+// //       </h1>
 
-// function Github() {
-//   return (
-//     <Row className="stats-container">
-//       <h1 className="project-heading">
-//         Days I <strong className="purple">Code</strong>
-//       </h1>
-      
-//       <div className="heatmap-wrapper">
-//         <GitHubCalendar
-//           username="AKDev32"
-//           blockSize={15}
-//           blockMargin={5}
-//           color="#c084f5"
-//           fontSize={16}
-//           // This ensures the library uses your CSS width
-//           style={{ color: "white" }} 
-//         />
-//       </div>
-//     </Row>
-//   );
-// }
+// //       <div className="heatmap-wrapper">
+// //         <GitHubCalendar
+// //           username="AKDev32"
+// //           blockSize={15}
+// //           blockMargin={5}
+// //           color="#c084f5"
+// //           fontSize={16}
+// //           // This ensures the library uses your CSS width
+// //           style={{ color: "white" }}
+// //         />
+// //       </div>
+// //     </Row>
+// //   );
+// // }
 
-// export default Github;
+// // export default Github;
