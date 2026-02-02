@@ -27,9 +27,6 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Solving Data Structures & Algorithms Problems 🧠
-            </li>
-            <li className="about-activity">
               <ImPointRight /> Reading Tech & Self-Growth Content 📚
             </li>
             <li className="about-activity">

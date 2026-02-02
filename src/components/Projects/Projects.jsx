@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
+import Pathfinder from "../../Assets/Projects/Path.png";
+import CodeSnap from "../../Assets/Projects/CodeSnap.png";
+import ColumnStore from "../../Assets/Projects/Column.png";
 import LeetLogic from "../../Assets/Projects/LeetLogic.png";
 // import suicide from "../../Assets/Projects/suicide.png";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
@@ -33,27 +33,44 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ColumnStore}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Column Store Database Engine"
+              description="
+Built a high-performance columnar storage database in vanilla JavaScript 
+with 5–10× compression using dictionary encoding and RLE. 
+Implemented a SQL parser and execution engine with predicate 
+pushdown and late materialization for O(n) scans. Added real-time benchmarking 
+and Canvas-based visualizations for performance comparison."
+              ghLink="https://github.com/AKDev32/Column_Store_Project"
+              demoLink="https://column-storage.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={CodeSnap}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="CodeSnap"
+              description="Built a web-based tool that converts code snippets into visually appealing images for easy sharing. Supports customizable themes, fonts, and backgrounds with instant preview and export."
+              ghLink="https://github.com/AKDev32/Code_To_ImageConverter"
+              demoLink="https://codetoimagecreater.vercel.app/"
             />
-          </Col> */}
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Pathfinder}
+              isBlog={false}
+              title="Pathfinding Algorithm Visualizer "
+              description="Built an interactive algorithm visualization tool using React and Tailwind CSS, demonstrating Dĳkstra’s and A* algorithms with real-time animations.
+                           Implemented a grid-based graph system with dynamic wall placement and draggable start/end nodes, enabling intuitive exploration of shortest-path behavior.
+                           Improved learning experience and engagement by visualizing step-by-step algorithm execution and traversal paths."
+              ghLink="https://github.com/AKDev32/data-visualizer-dashboard"
+              demoLink="http://pathfinderalgo-orcin.vercel.app/"
+            />
+          </Col>
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
