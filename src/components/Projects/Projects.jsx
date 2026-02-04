@@ -6,8 +6,8 @@ import Pathfinder from "../../Assets/Projects/Path.png";
 import CodeSnap from "../../Assets/Projects/CodeSnap.png";
 import ColumnStore from "../../Assets/Projects/Column.png";
 import LeetLogic from "../../Assets/Projects/LeetLogic.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
+import Rate from "../../Assets/Projects/Ratleimitor.png";
+import web from "../../Assets/Projects/webCrawler.png";
 
 function Projects() {
   return (
@@ -23,11 +23,39 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={ColumnStore}
+              isBlog={false}
+              title="Column Store Database Engine"
+              description="
+              Engineered a high-performance columnar storage engine from scratch, achieving a 5–10× reduction in storage size by implementing dictionary and run-length encoding (RLE).
+              Optimized analytical query execution to $O(n)$ for filtered scans by implementing predicate pushdown and late materialization techniques.
+              Developed a custom SQL parser supporting aggregations (GROUP BY, SUM) to handle complex datasets directly in the browser."
+              ghLink="https://github.com/AKDev32/Column_Store_Project"
+              demoLink="https://column-storage.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Rate}
+              isBlog={false}
+              title="RateLimiter Pro | Distributed Rate Limiting System"
+              description="Designed a production-grade rate limiting system implementing Token Bucket and Sliding Window algorithms to prevent API abuse and manage traffic bursts.
+                          Ensured atomic request counting across distributed servers by integrating Redis (INCR/EXPIRE), eliminating race conditions during high-traffic spikes.
+                          Built a traffic simulator to benchmark system performance, monitoring latency and success rates under simulated spiky workloads."
+              ghLink="https://github.com/AKDev32/RateLimiterPro"
+              demoLink="https://rate-limiter-pro.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={LeetLogic}
               isBlog={false}
               title="LeetLogic"
-              description="LeetLogic helps students prepare for coding interviews by providing 50+ company-wise previous year interview questions in one place.
-                           It removes the need for paid tools like LeetCode Premium, making interview prep focused, affordable, and accessible."
+              description="Developed a centralized DSA practice platform serving 50+ company-specific interview questions, providing a free alternative to premium
+                          resources for students.
+                          Automated data retrieval from interview APIs to provide real-time updates on frequent coding patterns used by top-tier tech firms."
               ghLink="https://github.com/AKDev32/LeetLogic"
               demoLink="https://leet-logic.vercel.app"
             />
@@ -35,17 +63,14 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ColumnStore}
+              imgPath={web}
               isBlog={false}
-              title="Column Store Database Engine"
-              description="
-Built a high-performance columnar storage database in vanilla JavaScript 
-with 5–10× compression using dictionary encoding and RLE. 
-Implemented a SQL parser and execution engine with predicate 
-pushdown and late materialization for O(n) scans. Added real-time benchmarking 
-and Canvas-based visualizations for performance comparison."
-              ghLink="https://github.com/AKDev32/Column_Store_Project"
-              demoLink="https://column-storage.vercel.app/"
+              title="WebCrawler | Browser-Based Tool"
+              description="Created a multi-threaded web crawler that operates entirely without backend infrastructure, ensuring robots.txt compliance and URL filtering.
+                          Implemented persistent state management using IndexedDB, allowing users to resume interrupted crawls and export data in JSON/CSV
+                          formats."
+              ghLink="https://github.com/AKDev32/Web-Crawler"
+              demoLink="https://web-crawler-js.vercel.app/"
             />
           </Col>
 
@@ -71,28 +96,6 @@ and Canvas-based visualizations for performance comparison."
               demoLink="http://pathfinderalgo-orcin.vercel.app/"
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col> */}
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
