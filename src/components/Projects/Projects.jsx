@@ -8,6 +8,8 @@ import ColumnStore from "../../Assets/Projects/Column.png";
 import LeetLogic from "../../Assets/Projects/LeetLogic.png";
 import Rate from "../../Assets/Projects/Ratleimitor.png";
 import web from "../../Assets/Projects/webCrawler.png";
+import Fake from "../../Assets/Projects/Fake.png";
+import News from "../../Assets/Projects/News.png";
 
 function Projects() {
   return (
@@ -23,13 +25,40 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={News}
+              isBlog={false}
+              title="Fake News Detection System"
+              description="
+              Built an NLP pipeline for fake news classification using Logistic Regression and TF-IDF vectorization on textual news datasets.
+              Designed preprocessing pipeline including tokenization, normalization, and feature extraction for robust classification.
+              Implemented model deployment with Streamlit enabling real-time prediction and interpretability through confidence scores."
+              ghLink="https://github.com/AKDev32/FakeNewsDetection"
+              demoLink="https://amankumar-fake-news-detector.streamlit.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Fake}
+              isBlog={false}
+              title="Credit Card Fraud Detection using Machine Learning"
+              description="
+              Implemented supervised ML models (Logistic Regression, Decision Tree, KNN) on the Kaggle credit card fraud dataset.
+              Addressed severe class imbalance (0.17\% fraud cases) using SMOTE oversampling to improve recall for fraud detection.
+              Conducted exploratory data analysis including ROC-AUC evaluation, confusion matrices, and correlation analysis."
+              ghLink="https://github.com/AKDev32/CreditCardFraudDetection"
+              demoLink="https://amankumar-credit-card-fraud-detector.streamlit.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={ColumnStore}
               isBlog={false}
               title="Column Store Database Engine"
               description="
-              Engineered a high-performance columnar storage engine from scratch, achieving a 5–10× reduction in storage size by implementing dictionary and run-length encoding (RLE).
-              Optimized analytical query execution to $O(n)$ for filtered scans by implementing predicate pushdown and late materialization techniques.
-              Developed a custom SQL parser supporting aggregations (GROUP BY, SUM) to handle complex datasets directly in the browser."
+              Architected browser-native columnar database engine optimized for analytical workloads.
+              Reduced storage footprint by 5–10 times using dictionary encoding and run-length encoding (RLE).
+              Improved filtered query execution speed by ~60\% via predicate pushdown and late materialization.
+              Implemented custom SQL parser supporting GROUP BY and SUM aggregations across large datasets (10k+ rows tested)."
               ghLink="https://github.com/AKDev32/Column_Store_Project"
               demoLink="https://column-storage.vercel.app/"
             />
@@ -40,9 +69,9 @@ function Projects() {
               imgPath={Rate}
               isBlog={false}
               title="RateLimiter Pro | Distributed Rate Limiting System"
-              description="Designed a production-grade rate limiting system implementing Token Bucket and Sliding Window algorithms to prevent API abuse and manage traffic bursts.
-                          Ensured atomic request counting across distributed servers by integrating Redis (INCR/EXPIRE), eliminating race conditions during high-traffic spikes.
-                          Built a traffic simulator to benchmark system performance, monitoring latency and success rates under simulated spiky workloads."
+              description="Designed scalable rate limiting system handling simulated traffic of 5,000+ requests/minute.
+                          Ensured atomic consistency using Redis-style INCR/EXPIRE operations under concurrent load.
+                          Reduced request bursts by 80% during stress testing with Token Bucket & Sliding Window algorithms."
               ghLink="https://github.com/AKDev32/RateLimiterPro"
               demoLink="https://rate-limiter-pro.vercel.app/"
             />
